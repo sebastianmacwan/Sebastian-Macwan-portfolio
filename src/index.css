@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light dark; }
+
+/* Smooth scroll for anchor links */
+html { scroll-behavior: smooth; }
+
+.container-lg { @apply max-w-6xl mx-auto px-4; }
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-2xl px-5 py-2.5 font-medium shadow-sm transition hover:shadow-md;
+}
+.btn-primary { @apply btn bg-primary text-white hover:brightness-110; }
+.btn-ghost { @apply btn bg-white text-gray-900 border border-gray-200 hover:bg-gray-50; }
+.badge { @apply inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold; }
+
+.card { @apply rounded-2xl bg-white dark:bg-gray-800 shadow p-6; }
+.section { @apply py-16 md:py-24; }
+.heading { @apply text-3xl md:text-4xl font-bold tracking-tight; }
+.subtle { @apply text-gray-600 dark:text-gray-300; }
+
